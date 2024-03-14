@@ -6,19 +6,21 @@ public class Main {
         while (executar) {
             executar = false;
 
-            var opcao = Prompt.lerInteiro("Escolha uma opçao:");
+            Prompt.imprimir("Escolha uma opçao: ", false);
+            var opcao = Prompt.lerInteiro();
 
             switch (opcao) {
                 case 1:
                     Exercicio01.Executar();
-
                     break;
                 case 2:
                     Exercicio02.Executar();
                     break;
+                case 3:
+                    Exercicio03.Executar();
+                    break;
                 default:
                     Prompt.imprimir("Opção inválida!");
-                    Prompt.imprimir("Escolha uma opção válida.");
 
                     executar = true;
                     break;
@@ -52,7 +54,8 @@ public class Main {
         Prompt.separador();
         Prompt.imprimir("Menu");
         Prompt.imprimir("1 - Exercício 01 - Número maior ou menor/igual a 10");
-        Prompt.imprimir("2 - Exercício 02");
+        Prompt.imprimir("2 - Exercício 02 - Soma de dois números");
+        Prompt.imprimir("3 - Exercício 03 - Sequência de números");
         Prompt.separador();
         Prompt.linhaEmBranco();
     }

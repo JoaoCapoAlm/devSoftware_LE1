@@ -14,8 +14,14 @@ public class Prompt {
 	/**
 	 * Imprime a mensagem enviada no console.
 	 */
-	public static void imprimir(String mensagem) {
-		System.out.println(mensagem);
+	public static void imprimir(String mensagem, Boolean newLine) {
+		if(newLine == null)
+			newLine = true;
+
+		if(newLine)
+			System.out.println(mensagem);
+		else
+			System.out.print(mensagem);
 		System.out.flush();
 	}
 
