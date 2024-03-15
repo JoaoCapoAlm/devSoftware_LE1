@@ -1,5 +1,3 @@
-import java.util.Properties;
-
 public class Exercicio04 {
     public static void Executar(){
         Prompt.imprimir("Exercício 4");
