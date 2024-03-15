@@ -25,6 +25,9 @@ public class Main {
                 case 5:
                     Exercicio05.Executar();
                     break;
+                case 6:
+                    Exercicio06.Executar();
+                    break;
                 default:
                     Prompt.imprimir("Opção inválida!");
 
@@ -64,6 +67,7 @@ public class Main {
         Prompt.imprimir("3 - Exercício 03 - Sequência de números");
         Prompt.imprimir("4 - Exercício 04 - Calculo");
         Prompt.imprimir("5 - Exercício 05 - Troca de valores");
+        Prompt.imprimir("6 - Exercício 06 - Conversão de temperatura");
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
