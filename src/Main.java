@@ -19,6 +19,9 @@ public class Main {
                 case 3:
                     Exercicio03.Executar();
                     break;
+                case 4:
+                    Exercicio04.Executar();
+                    break;
                 default:
                     Prompt.imprimir("Opção inválida!");
 
@@ -56,6 +59,7 @@ public class Main {
         Prompt.imprimir("1 - Exercício 01 - Número maior ou menor/igual a 10");
         Prompt.imprimir("2 - Exercício 02 - Soma de dois números");
         Prompt.imprimir("3 - Exercício 03 - Sequência de números");
+        Prompt.imprimir("4 - Exercício 04 - Calculo");
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
