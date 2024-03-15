@@ -37,6 +37,9 @@ public class Main {
                 case 8:
                     Exercicio08.Executar();
                     break;
+                case 9:
+                    Exercicio09.Executar();
+                    break;
                 default:
                     Prompt.imprimir("Opção inválida!");
 
@@ -76,8 +79,9 @@ public class Main {
         Prompt.imprimir("4 - Exercício 04 - Calculo");
         Prompt.imprimir("5 - Exercício 05 - Troca de valores");
         Prompt.imprimir("6 - Exercício 06 - Conversão de temperatura");
-        Prompt.imprimir("7 - Exercício 07 - Número no intervalo");
+        Prompt.imprimir("7 - Exercício 07 - Número no intervalo de 100 a 200");
         Prompt.imprimir("8 - Exercício 08 - Maior/menor/igual que 50");
+        Prompt.imprimir("9 - Exercício 09 - Maior/menor/igual entre si");
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
