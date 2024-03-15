@@ -1,4 +1,4 @@
-package exer;
+package Exer;
 
 import Helper.Prompt;
 
