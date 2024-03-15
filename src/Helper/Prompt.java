@@ -1,11 +1,8 @@
 package Helper;
 
-import jdk.incubator.vector.VectorOperators;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 /**
  * Um classe utilitária para imprimir e ler textos, números inteiros e decimais

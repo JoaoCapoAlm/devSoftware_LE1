@@ -47,6 +47,9 @@ public class Main {
                 case 12:
                     Exercicio12.Executar();
                     break;
+                case 13:
+                    Exercicio13.Executar();
+                    break;
                 default:
                     Prompt.imprimir(Prompt.ANSI_RED + "Opção inválida!", true);
                     break;
@@ -88,6 +91,7 @@ public class Main {
         Prompt.imprimir("10 - Exercício 10 - Número por extenso", true);
         Prompt.imprimir("11 - Exercício 11 - Ordenação de números", true);
         Prompt.imprimir("12 - Exercício 12 - Conversão número mês para texto", true);
+        Prompt.imprimir("13 - Exercício 13 - Calculadora simples", true);
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
