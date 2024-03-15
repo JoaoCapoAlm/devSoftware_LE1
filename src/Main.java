@@ -43,8 +43,11 @@ public class Main {
                 case 10:
                     Exercicio10.Executar();
                     break;
+                case 11:
+                    Exercicio11.Executar();
+                    break;
                 default:
-                    Prompt.imprimir("Opção inválida!");
+                    Prompt.imprimir("Opção inválida!", true);
 
                     executar = true;
                     break;
@@ -64,7 +67,7 @@ public class Main {
                     executar = false;
                     voltarMenu = false;
                 } else {
-                    Prompt.imprimir("Opção inválida!");
+                    Prompt.imprimir("Opção inválida!", true);
                 }
             }
 
@@ -75,19 +78,19 @@ public class Main {
 
     public static void MostrarMenu() {
         Prompt.separador();
-        Prompt.imprimir("Menu");
-        Prompt.imprimir("1 - Exercício 01 - Número maior ou menor/igual a 10");
-        Prompt.imprimir("2 - Exercício 02 - Soma de dois números");
-        Prompt.imprimir("3 - Exercício 03 - Sequência de números");
-        Prompt.imprimir("4 - Exercício 04 - Calculo");
-        Prompt.imprimir("5 - Exercício 05 - Troca de valores");
-        Prompt.imprimir("6 - Exercício 06 - Conversão de temperatura");
-        Prompt.imprimir("7 - Exercício 07 - Número no intervalo de 100 a 200");
-        Prompt.imprimir("8 - Exercício 08 - Maior/menor/igual que 50");
-        Prompt.imprimir("9 - Exercício 09 - Maior/menor/igual entre si");
-        Prompt.imprimir("10 - Exercício 10 - Número por extenso");
+        Prompt.imprimir("Menu", true);
+        Prompt.imprimir("1 - Exercício 01 - Número maior ou menor/igual a 10", true);
+        Prompt.imprimir("2 - Exercício 02 - Soma de dois números", true);
+        Prompt.imprimir("3 - Exercício 03 - Sequência de números", true);
+        Prompt.imprimir("4 - Exercício 04 - Calculo", true);
+        Prompt.imprimir("5 - Exercício 05 - Troca de valores", true);
+        Prompt.imprimir("6 - Exercício 06 - Conversão de temperatura", true);
+        Prompt.imprimir("7 - Exercício 07 - Número no intervalo de 100 a 200", true);
+        Prompt.imprimir("8 - Exercício 08 - Maior/menor/igual que 50", true);
+        Prompt.imprimir("9 - Exercício 09 - Maior/menor/igual entre si", true);
+        Prompt.imprimir("10 - Exercício 10 - Número por extenso", true);
+        Prompt.imprimir("11 - Exercício 11 - Ordenação de números", true);
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
-
 }

@@ -3,6 +3,7 @@ package Helper;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 /**
  * Um classe utilitária para imprimir e ler textos, números inteiros e decimais
@@ -37,11 +38,18 @@ public class Prompt {
 		System.out.flush();
 	}
 
+	public static void imprimirArray(double[] array, Boolean newLine){
+		for(var i : array){
+			imprimir(i);
+		}
+		System.out.flush();
+	}
+
 	/**
 	 * Imprime uma linha separadora no console.
 	 */
 	public static void separador() {
-		imprimir("---------------------------------------------------");
+		imprimir("---------------------------------------------------", true);
 	}
 
 	/**
