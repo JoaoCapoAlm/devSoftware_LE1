@@ -1,3 +1,7 @@
+package exer;
+
+import Helper.Prompt;
+
 public class Exercicio07 {
     public static void Executar(){
         Prompt.imprimir("Escreva um algoritmo que leia um número e diga, através de uma mensagem, se\n" +
