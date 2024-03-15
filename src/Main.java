@@ -7,8 +7,6 @@ public class Main {
 
         var executar = true;
         while (executar) {
-            executar = false;
-
             Prompt.imprimir("Escolha uma opçao: ", false);
             var opcao = Prompt.lerInteiro();
 
@@ -46,10 +44,11 @@ public class Main {
                 case 11:
                     Exercicio11.Executar();
                     break;
+                case 12:
+                    Exercicio12.Executar();
+                    break;
                 default:
-                    Prompt.imprimir("Opção inválida!", true);
-
-                    executar = true;
+                    Prompt.imprimir(Prompt.ANSI_RED + "Opção inválida!", true);
                     break;
             }
 
@@ -60,17 +59,15 @@ public class Main {
             while (voltarMenu) {
                 var optVoltarMenu = Prompt.lerLinha("Deseja voltar ao menu? (S)im ou (N)ão?");
                 if (optVoltarMenu.equalsIgnoreCase("S")) {
-                    executar = true;
                     voltarMenu = false;
                     MostrarMenu();
                 } else if (optVoltarMenu.equalsIgnoreCase("N")) {
                     executar = false;
                     voltarMenu = false;
                 } else {
-                    Prompt.imprimir("Opção inválida!", true);
+                    Prompt.imprimir(Prompt.ANSI_RED + "Opção inválida!", true);
                 }
             }
-
         }
 
         Prompt.pressionarEnter();
@@ -90,6 +87,7 @@ public class Main {
         Prompt.imprimir("9 - Exercício 09 - Maior/menor/igual entre si", true);
         Prompt.imprimir("10 - Exercício 10 - Número por extenso", true);
         Prompt.imprimir("11 - Exercício 11 - Ordenação de números", true);
+        Prompt.imprimir("12 - Exercício 12 - Conversão número mês para texto", true);
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
