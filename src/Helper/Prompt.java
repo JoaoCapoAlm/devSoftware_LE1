@@ -12,6 +12,8 @@ import java.io.InputStreamReader;
  * @author Geucimar Briatore
  */
 public class Prompt {
+	public static final String ANSI_RESET = "\u001B[0m";
+	public static final String ANSI_RED = "\u001B[31m";
 
 	/**
 	 * Imprime a mensagem enviada no console.
@@ -31,7 +33,7 @@ public class Prompt {
 	 * Imprime o objeto enviado no console.
 	 */
 	public static void imprimir(Object object) {
-		System.out.println(object);
+		System.out.println(object + ANSI_RESET);
 		System.out.flush();
 	}
 

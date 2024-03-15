@@ -40,6 +40,9 @@ public class Main {
                 case 9:
                     Exercicio09.Executar();
                     break;
+                case 10:
+                    Exercicio10.Executar();
+                    break;
                 default:
                     Prompt.imprimir("Opção inválida!");
 
@@ -82,6 +85,7 @@ public class Main {
         Prompt.imprimir("7 - Exercício 07 - Número no intervalo de 100 a 200");
         Prompt.imprimir("8 - Exercício 08 - Maior/menor/igual que 50");
         Prompt.imprimir("9 - Exercício 09 - Maior/menor/igual entre si");
+        Prompt.imprimir("10 - Exercício 10 - Número por extenso");
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
