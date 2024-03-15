@@ -1,3 +1,6 @@
+import Helper.Prompt;
+import exer.*;
+
 public class Main {
     public static void main(String[] args) {
         MostrarMenu();
@@ -27,6 +30,9 @@ public class Main {
                     break;
                 case 6:
                     Exercicio06.Executar();
+                    break;
+                case 7:
+                    Exercicio07.Executar();
                     break;
                 default:
                     Prompt.imprimir("Opção inválida!");
@@ -68,6 +74,7 @@ public class Main {
         Prompt.imprimir("4 - Exercício 04 - Calculo");
         Prompt.imprimir("5 - Exercício 05 - Troca de valores");
         Prompt.imprimir("6 - Exercício 06 - Conversão de temperatura");
+        Prompt.imprimir("7 - Exercício 07 - Número no intervalo");
         Prompt.separador();
         Prompt.linhaEmBranco();
     }

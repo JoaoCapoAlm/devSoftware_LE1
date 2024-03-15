@@ -1,3 +1,7 @@
+package exer;
+
+import Helper.Prompt;
+
 public class Exercicio01 {
     public static void Executar(){
         Prompt.imprimir("Exercício 01");
