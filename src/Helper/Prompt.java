@@ -1,5 +1,7 @@
 package Helper;
 
+import jdk.incubator.vector.VectorOperators;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -13,20 +15,18 @@ import java.util.ArrayList;
  * @author Geucimar Briatore
  */
 public class Prompt {
-	public static final String ANSI_RESET = "\u001B[0m";
+	private static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_RED = "\u001B[31m";
 
 	/**
 	 * Imprime a mensagem enviada no console.
 	 */
-	public static void imprimir(String mensagem, Boolean newLine) {
-		if(newLine == null)
-			newLine = true;
+	public static void imprimir(String mensagem, boolean newLine) {
 
 		if(newLine)
-			System.out.println(mensagem);
+			System.out.println(mensagem + ANSI_RESET);
 		else
-			System.out.print(mensagem);
+			System.out.print(mensagem + ANSI_RESET);
 		System.out.flush();
 	}
 
@@ -38,11 +38,13 @@ public class Prompt {
 		System.out.flush();
 	}
 
-	public static void imprimirArray(double[] array, Boolean newLine){
-		for(var i : array){
-			imprimir(i);
+	public static void imprimirArray(double[] array, boolean newLine){
+		if(array == null){
+			return;
 		}
-		System.out.flush();
+		for(var i : array){
+			imprimir(String.valueOf(i), newLine);
+		}
 	}
 
 	/**
@@ -56,8 +58,7 @@ public class Prompt {
 	 * Imprime uma linha em branco no console.
 	 */
 	public static void linhaEmBranco() {
-		System.out.println();
-		System.out.flush();
+		imprimir("", true);
 	}
 
 	/**
@@ -84,7 +85,7 @@ public class Prompt {
 				BufferedReader br = new BufferedReader(isr);
 				return br.readLine();
 			} catch (IOException e) {
-				System.out.println("Texto inválido, digite novamente...");
+				imprimir("Texto inválido, digite novamente...", true);
 			}
 		}
 	}
@@ -114,7 +115,7 @@ public class Prompt {
 				}
 				return Integer.parseInt(linha);
 			} catch (NumberFormatException tExcept) {
-				System.out.println("Inteiro inválido, digite novamente...");
+				imprimir("Inteiro inválido, digite novamente...");
 			}
 		}
 	}
@@ -125,8 +126,8 @@ public class Prompt {
 	 * 
 	 * @return double
 	 */
-	public static double lerDecimal(String mensagem) {
-		imprimir(mensagem);
+	public static double lerDecimal(String mensagem, boolean newLine) {
+		imprimir(mensagem, newLine);
 		return lerDecimal();
 	}
 
@@ -144,7 +145,7 @@ public class Prompt {
 				}
 				return Double.parseDouble(linha);
 			} catch (NumberFormatException e) {
-				System.out.println("Decimal inválido, digite novamente...");
+				imprimir("Decimal inválido, digite novamente...", true);
 			}
 		}
 	}
@@ -154,7 +155,7 @@ public class Prompt {
 	 * continuar.
 	 */
 	public static void pressionarEnter() {
-		System.out.print("Pressione ENTER para continuar...");
+		imprimir("Pressione ENTER para continuar...", false);
 		lerLinha();
 	}
 }
