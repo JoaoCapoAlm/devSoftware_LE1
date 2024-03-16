@@ -50,7 +50,7 @@ public class Exercicio12 {
                 Prompt.imprimir("Dezembro", true);
                 break;
             default:
-                Prompt.imprimir(Prompt.ANSI_RED + "Valor inválido!", true);
+                Prompt.imprimirErro("Valor inválido!", true);
                 break;
         }
     }

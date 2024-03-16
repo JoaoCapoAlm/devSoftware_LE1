@@ -12,18 +12,14 @@ import java.io.InputStreamReader;
  * @author Geucimar Briatore
  */
 public class Prompt {
-	private static final String ANSI_RESET = "\u001B[0m";
-	public static final String ANSI_RED = "\u001B[31m";
-
 	/**
 	 * Imprime a mensagem enviada no console.
 	 */
 	public static void imprimir(String mensagem, boolean newLine) {
-
 		if(newLine)
-			System.out.println(mensagem + ANSI_RESET);
+			System.out.println(mensagem);
 		else
-			System.out.print(mensagem + ANSI_RESET);
+			System.out.print(mensagem);
 		System.out.flush();
 	}
 
@@ -31,7 +27,7 @@ public class Prompt {
 	 * Imprime o objeto enviado no console.
 	 */
 	public static void imprimir(Object object) {
-		System.out.println(object + ANSI_RESET);
+		System.out.println(object);
 		System.out.flush();
 	}
 
@@ -42,6 +38,14 @@ public class Prompt {
 		for(var i : array){
 			imprimir(String.valueOf(i), newLine);
 		}
+	}
+
+	public static void imprimirErro(String mensagem, boolean newLine){
+		if(newLine)
+			System.err.println(mensagem);
+		else
+			System.err.print(mensagem);
+		System.err.flush();
 	}
 
 	/**
@@ -82,7 +86,7 @@ public class Prompt {
 				BufferedReader br = new BufferedReader(isr);
 				return br.readLine();
 			} catch (IOException e) {
-				imprimir("Texto inválido, digite novamente...", true);
+				imprimirErro("Texto inválido, digite novamente...", true);
 			}
 		}
 	}
@@ -112,7 +116,7 @@ public class Prompt {
 				}
 				return Integer.parseInt(linha);
 			} catch (NumberFormatException tExcept) {
-				imprimir("Inteiro inválido, digite novamente...");
+				imprimirErro("Inteiro inválido, digite novamente...", true);
 			}
 		}
 	}
@@ -142,7 +146,7 @@ public class Prompt {
 				}
 				return Double.parseDouble(linha);
 			} catch (NumberFormatException e) {
-				imprimir("Decimal inválido, digite novamente...", true);
+				imprimirErro("Decimal inválido, digite novamente...", true);
 			}
 		}
 	}

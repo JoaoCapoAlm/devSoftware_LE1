@@ -51,7 +51,7 @@ public class Main {
                     Exercicio13.Executar();
                     break;
                 default:
-                    Prompt.imprimir(Prompt.ANSI_RED + "Opção inválida!", true);
+                    Prompt.imprimirErro("Opção inválida!", true);
                     break;
             }
 
@@ -68,7 +68,7 @@ public class Main {
                     executar = false;
                     voltarMenu = false;
                 } else {
-                    Prompt.imprimir(Prompt.ANSI_RED + "Opção inválida!", true);
+                    Prompt.imprimirErro("Opção inválida!", true);
                 }
             }
         }

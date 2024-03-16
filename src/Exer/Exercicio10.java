@@ -2,12 +2,11 @@ package Exer;
 
 import Helper.Prompt;
 
-import static Helper.Prompt.ANSI_RED;
-
 public class Exercicio10 {
     public static void Executar() {
-        Prompt.imprimir("Escreva um algoritmo que leia um número de 1 a 5 e escreva-o por extenso.");
-        Prompt.imprimir("Caso o usuário digite um valor que não esteja neste intervalo, exibir a mensagem: “Número inválido!”.");
+        Prompt.imprimir("Exercício 10");
+        Prompt.imprimir("Escreva um algoritmo que leia um número de 1 a 5 e escreva-o por extenso.", true);
+        Prompt.imprimir("Caso o usuário digite um valor que não esteja neste intervalo, exibir a mensagem: “Número inválido!”.", true);
         Prompt.linhaEmBranco();
 
         Prompt.imprimir("Digite um valor inteiro: ", false);
@@ -15,22 +14,22 @@ public class Exercicio10 {
 
         switch (num) {
             case 1:
-                Prompt.imprimir("Um");
+                Prompt.imprimir("Um", true);
                 break;
             case 2:
-                Prompt.imprimir("Dois");
+                Prompt.imprimir("Dois", true);
                 break;
             case 3:
-                Prompt.imprimir("Três");
+                Prompt.imprimir("Três", true);
                 break;
             case 4:
-                Prompt.imprimir("Quatro");
+                Prompt.imprimir("Quatro", true);
                 break;
             case 5:
-                Prompt.imprimir("Cinco");
+                Prompt.imprimir("Cinco", true);
                 break;
             default:
-                Prompt.imprimir(ANSI_RED + "Número inválido!");
+                Prompt.imprimirErro("Número inválido!", true);
                 break;
         }
     }

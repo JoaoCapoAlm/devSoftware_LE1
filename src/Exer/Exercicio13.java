@@ -2,8 +2,6 @@ package Exer;
 
 import Helper.Prompt;
 
-import java.util.stream.Stream;
-
 public class Exercicio13 {
     public static void Executar(){
         Prompt.imprimir("Exercício 13", true);
@@ -42,12 +40,12 @@ public class Exercicio13 {
             case "/" -> {
                 Prompt.imprimir("Operador: / (divisão)", true);
                 if(b == 0){
-                    Prompt.imprimir(Prompt.ANSI_RED + "Operação inválida, valor do divisor é igual a 0 (zero)", true);
+                    Prompt.imprimirErro("Operação inválida, valor do divisor é igual a 0 (zero)", true);
                 } else{
                     Prompt.imprimir("A / B = " + (a / b), true);
                 }
             }
-            default -> Prompt.imprimir(Prompt.ANSI_RED + "Operador inválido!", true);
+            default -> Prompt.imprimirErro("Operador inválido!", true);
         }
     }
 }
