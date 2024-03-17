@@ -1,5 +1,5 @@
-import Helper.Prompt;
 import Exer.*;
+import Helper.Prompt;
 
 public class Main {
     public static void main(String[] args) {
@@ -50,6 +50,9 @@ public class Main {
                 case 13:
                     Exercicio13.Executar();
                     break;
+                case 14:
+                    Exercicio14.Executar();
+                    break;
                 default:
                     Prompt.imprimirErro("Opção inválida!", true);
                     break;
@@ -92,6 +95,7 @@ public class Main {
         Prompt.imprimir("11 - Exercício 11 - Ordenação de números", true);
         Prompt.imprimir("12 - Exercício 12 - Conversão número mês para texto", true);
         Prompt.imprimir("13 - Exercício 13 - Calculadora simples", true);
+        Prompt.imprimir("14 - Exercício 14 - Progressão Aritmética (PA)", true);
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
