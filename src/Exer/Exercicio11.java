@@ -9,7 +9,7 @@ public class Exercicio11 {
         Prompt.imprimir("Exercício 11", true);
         Prompt.imprimir("Escreva um algoritmo que leia três valores inteiros distintos e escreva-os em ordem crescente.", true);
 
-        double[] arrayNum = new double[3];
+        int[] arrayNum = new int[3];
         for (var i = 0; i < 3; i++){
             arrayNum[i] = Prompt.lerInteiro("Escreva um número: ");
         }

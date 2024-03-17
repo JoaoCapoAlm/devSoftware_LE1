@@ -31,7 +31,7 @@ public class Prompt {
 		System.out.flush();
 	}
 
-	public static void imprimirArray(double[] array, boolean newLine){
+	public static void imprimirArray(int[] array, boolean newLine){
 		if(array == null){
 			return;
 		}
