@@ -53,6 +53,9 @@ public class Main {
                 case 14:
                     Exercicio14.Executar();
                     break;
+                case 15:
+                    Exercicio15.Executar();
+                    break;
                 default:
                     Prompt.imprimirErro("Opção inválida!", true);
                     break;
@@ -96,6 +99,7 @@ public class Main {
         Prompt.imprimir("12 - Exercício 12 - Conversão número mês para texto", true);
         Prompt.imprimir("13 - Exercício 13 - Calculadora simples", true);
         Prompt.imprimir("14 - Exercício 14 - Progressão Aritmética (PA)", true);
+        Prompt.imprimir("15 - Exercício 15 - Distância entre dois pontos", true);
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
