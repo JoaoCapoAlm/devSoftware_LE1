@@ -2,7 +2,7 @@ package Exer;
 
 import Helper.Prompt;
 
-import java.text.DecimalFormat;
+import static java.lang.String.format;
 
 public class Exercicio16 {
     public static void Executar() {
@@ -21,8 +21,6 @@ public class Exercicio16 {
         Prompt.imprimir("Nota 3: ", false);
         var nota3 = Prompt.lerDecimal();
 
-        var formater = new DecimalFormat("0.##");
-
-        Prompt.imprimir("Média: " + formater.format((nota1 + nota2 + nota3)/3), true);
+        Prompt.imprimir("Média: " + format("%.2f", (nota1 + nota2 + nota3)/3), true);
     }
 }
