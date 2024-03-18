@@ -97,8 +97,8 @@ public class Prompt {
 	 * 
 	 * @return int
 	 */
-	public static int lerInteiro(String mensagem) {
-		imprimir(mensagem);
+	public static int lerInteiro(String mensagem, boolean newLine) {
+		imprimir(mensagem, newLine);
 		return lerInteiro();
 	}
 
@@ -107,7 +107,7 @@ public class Prompt {
 	 * 
 	 * @return int
 	 */
-	public static int lerInteiro() {
+	private static int lerInteiro() {
 		while (true) {
 			try {
 				String linha = lerLinha();
@@ -137,7 +137,7 @@ public class Prompt {
 	 * 
 	 * @return double
 	 */
-	public static double lerDecimal() {
+	private static double lerDecimal() {
 		while (true) {
 			try {
 				String linha = lerLinha();

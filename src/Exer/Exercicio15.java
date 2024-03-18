@@ -13,14 +13,10 @@ public class Exercicio15 {
         Prompt.linhaEmBranco();
 
         Prompt.imprimir("Digite a posição dos pontos", true);
-        Prompt.imprimir("x1 = ", false);
-        var x1 = Prompt.lerInteiro();
-        Prompt.imprimir("y1 = ", false);
-        var y1 = Prompt.lerInteiro();
-        Prompt.imprimir("x2 = ", false);
-        var x2 = Prompt.lerInteiro();
-        Prompt.imprimir("y2 = ", false);
-        var y2 = Prompt.lerInteiro();
+        var x1 = Prompt.lerInteiro("x1 = ", false);
+        var y1 = Prompt.lerInteiro("y1 = ", false);
+        var x2 = Prompt.lerInteiro("x2 = ", false);
+        var y2 = Prompt.lerInteiro("y2 = ", false);
 
         var distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         var formater = new DecimalFormat("0.##");

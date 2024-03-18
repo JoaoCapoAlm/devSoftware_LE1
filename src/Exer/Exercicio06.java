@@ -9,8 +9,7 @@ public class Exercicio06 {
         Prompt.imprimir("A fórmula de conversão é: F = (9 * C + 160) / 5", true);
         Prompt.linhaEmBranco();
 
-        Prompt.imprimir("Insira a temperatura em graus Celsius: ", false);
-        var celsius = Prompt.lerDecimal();
+        var celsius = Prompt.lerDecimal("Insira a temperatura em graus Celsius: ", false);
         var fahrenheit = (9 * celsius + 160) / 5;
 
         Prompt.imprimir("Celsius -> Fahrenheit", true);

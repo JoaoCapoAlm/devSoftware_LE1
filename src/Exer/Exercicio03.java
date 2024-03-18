@@ -10,15 +10,15 @@ public class Exercicio03 {
         Prompt.imprimir("Caso os números sejam iguais informar ao usuário que a sequência de números informados é inválida.");
         Prompt.linhaEmBranco();
 
-        var primeiroNumero = Prompt.lerInteiro("Escreva o primeiro número inteiro:");
-        var segundoNumero = Prompt.lerInteiro("Escreva o segundo número inteiro:");
+        var primeiroNumero = Prompt.lerInteiro("Escreva o primeiro número inteiro: ", false);
+        var segundoNumero = Prompt.lerInteiro("Escreva o segundo número inteiro: ", false);
 
         if(primeiroNumero > segundoNumero){
-            Prompt.imprimir("O primeiro número (" + primeiroNumero + ") é maior que o segundo (" + segundoNumero + ").");
+            Prompt.imprimir("O primeiro número (" + primeiroNumero + ") é maior que o segundo (" + segundoNumero + ").", true);
         } else if (primeiroNumero < segundoNumero) {
-            Prompt.imprimir("O segundo número (" + segundoNumero  + ") é maior que o primeiro (" + primeiroNumero + ").");
+            Prompt.imprimir("O segundo número (" + segundoNumero  + ") é maior que o primeiro (" + primeiroNumero + ").", true);
         } else {
-            Prompt.imprimir("Sequência de números inválida!");
+            Prompt.imprimir("Sequência de números inválida!", true);
         }
     }
 }

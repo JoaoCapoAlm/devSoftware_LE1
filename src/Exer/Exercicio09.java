@@ -10,18 +10,14 @@ public class Exercicio09 {
         Prompt.imprimir("Caso sejam diferentes, informe que são diferentes e qual número é o maior.", true);
         Prompt.linhaEmBranco();
 
-        Prompt.imprimir("Digite o valor da variável A: ", false);
-        var a = Prompt.lerDecimal();
+        var a = Prompt.lerDecimal("Digite o valor da variável A: ", false);
+        var b = Prompt.lerDecimal("Digite o valor da variável B: ", false);
 
-        Prompt.imprimir("Digite o valor da variável B: ", false);
-        var b = Prompt.lerDecimal();
-
-        if(a > b){
+        if(a > b)
             Prompt.imprimir("A variável A (" + a + ") é maior que a variável B (" + b + ").", true);
-        } else if (a < b) {
+        else if (a < b)
             Prompt.imprimir("A variável B (" + b + ") é maior que a variável A (" + a + ").", true);
-        } else {
+        else
             Prompt.imprimir("As váriaveis tem o mesmo valor (" + a + ").", true);
-        }
     }
 }

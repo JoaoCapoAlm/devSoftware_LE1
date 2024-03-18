@@ -12,11 +12,8 @@ public class Exercicio13 {
         Prompt.imprimir("Tratar erro de divisão por zero.", true);
         Prompt.linhaEmBranco();
 
-        Prompt.imprimir("Digite um número: ", false);
-        var a = Prompt.lerDecimal();
-
-        Prompt.imprimir("Digite o segundo número: ", false);
-        var b = Prompt.lerDecimal();
+        var a = Prompt.lerDecimal("Digite um número: ", false);
+        var b = Prompt.lerDecimal("Digite o segundo número: ", false);
 
         Prompt.imprimir("Digite o operador: ", false);
         var operador = Prompt.lerLinha();

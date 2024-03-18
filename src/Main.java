@@ -7,73 +7,28 @@ public class Main {
 
         var executar = true;
         while (executar) {
-            Prompt.imprimir("Escolha uma opçao: ", false);
-            var opcao = Prompt.lerInteiro();
-
-            switch (opcao) {
-                case 1:
-                    Exercicio01.Executar();
-                    break;
-                case 2:
-                    Exercicio02.Executar();
-                    break;
-                case 3:
-                    Exercicio03.Executar();
-                    break;
-                case 4:
-                    Exercicio04.Executar();
-                    break;
-                case 5:
-                    Exercicio05.Executar();
-                    break;
-                case 6:
-                    Exercicio06.Executar();
-                    break;
-                case 7:
-                    Exercicio07.Executar();
-                    break;
-                case 8:
-                    Exercicio08.Executar();
-                    break;
-                case 9:
-                    Exercicio09.Executar();
-                    break;
-                case 10:
-                    Exercicio10.Executar();
-                    break;
-                case 11:
-                    Exercicio11.Executar();
-                    break;
-                case 12:
-                    Exercicio12.Executar();
-                    break;
-                case 13:
-                    Exercicio13.Executar();
-                    break;
-                case 14:
-                    Exercicio14.Executar();
-                    break;
-                case 15:
-                    Exercicio15.Executar();
-                    break;
-                case 16:
-                    Exercicio16.Executar();
-                    break;
-                case 17:
-                    Exercicio17.Executar();
-                    break;
-                case 18:
-                    Exercicio18.Executar();
-                    break;
-                case 19:
-                    Exercicio19.Executar();
-                    break;
-                case 20:
-                    Exercicio20.Executar();
-                    break;
-                default:
-                    Prompt.imprimirErro("Opção inválida!", true);
-                    break;
+            switch (Prompt.lerInteiro("Escolha uma opçao: ", false)) {
+                case 1 -> Exercicio01.Executar();
+                case 2 -> Exercicio02.Executar();
+                case 3 -> Exercicio03.Executar();
+                case 4 -> Exercicio04.Executar();
+                case 5 -> Exercicio05.Executar();
+                case 6 -> Exercicio06.Executar();
+                case 7 -> Exercicio07.Executar();
+                case 8 -> Exercicio08.Executar();
+                case 9 -> Exercicio09.Executar();
+                case 10 -> Exercicio10.Executar();
+                case 11 -> Exercicio11.Executar();
+                case 12 -> Exercicio12.Executar();
+                case 13 -> Exercicio13.Executar();
+                case 14 -> Exercicio14.Executar();
+                case 15 -> Exercicio15.Executar();
+                case 16 -> Exercicio16.Executar();
+                case 17 -> Exercicio17.Executar();
+                case 18 -> Exercicio18.Executar();
+                case 19 -> Exercicio19.Executar();
+                case 20 -> Exercicio20.Executar();
+                default -> Prompt.imprimirErro("Opção inválida!", true);
             }
 
             Prompt.separador();

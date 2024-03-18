@@ -12,13 +12,10 @@ public class Exercicio14 {
         Prompt.linhaEmBranco();
 
         Prompt.imprimir("Digite os valores", true);
-        Prompt.imprimir("a1 = ", false);
-        var a1 = Prompt.lerInteiro();
-        Prompt.imprimir("n = ", false);
-        var n = Prompt.lerInteiro();
-        Prompt.imprimir("r = ", false);
-        var r = Prompt.lerInteiro();
+        var a1 = Prompt.lerInteiro("a1 = ", false);
+        var n = Prompt.lerInteiro("n = ", false);
+        var r = Prompt.lerInteiro("r = ", false);
 
-        Prompt.imprimir("an = " + (a1 + (n - 1) * r));
+        Prompt.imprimir("an = " + (a1 + (n - 1) * r), true);
     }
 }

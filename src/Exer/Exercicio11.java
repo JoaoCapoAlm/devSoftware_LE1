@@ -11,7 +11,7 @@ public class Exercicio11 {
 
         int[] arrayNum = new int[3];
         for (var i = 0; i < 3; i++){
-            arrayNum[i] = Prompt.lerInteiro("Escreva um número: ");
+            arrayNum[i] = Prompt.lerInteiro("Escreva um número: ", true);
         }
 
         Arrays.sort(arrayNum);

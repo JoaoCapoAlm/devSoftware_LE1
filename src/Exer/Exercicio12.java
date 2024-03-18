@@ -9,49 +9,20 @@ public class Exercicio12 {
         Prompt.imprimir("Valide mês inválido.", true);
         Prompt.linhaEmBranco();
 
-        Prompt.imprimir("Digite o número do mês: ", false);
-        var numMes = Prompt.lerInteiro();
-
-        switch (numMes){
-            case 1:
-                Prompt.imprimir("Janeiro", true);
-                break;
-            case 2:
-                Prompt.imprimir("Fevereiro", true);
-                break;
-            case 3:
-                Prompt.imprimir("Março", true);
-                break;
-            case 4:
-                Prompt.imprimir("Abril", true);
-                break;
-            case 5:
-                Prompt.imprimir("Maio", true);
-                break;
-            case 6:
-                Prompt.imprimir("Junho", true);
-                break;
-            case 7:
-                Prompt.imprimir("Julho", true);
-                break;
-            case 8:
-                Prompt.imprimir("Agosto", true);
-                break;
-            case 9:
-                Prompt.imprimir("Setembro", true);
-                break;
-            case 10:
-                Prompt.imprimir("Outubro", true);
-                break;
-            case 11:
-                Prompt.imprimir("Novembro", true);
-                break;
-            case 12:
-                Prompt.imprimir("Dezembro", true);
-                break;
-            default:
-                Prompt.imprimirErro("Valor inválido!", true);
-                break;
+        switch (Prompt.lerInteiro("Digite o número do mês: ", false)){
+            case 1 -> Prompt.imprimir("Janeiro", true);
+            case 2 -> Prompt.imprimir("Fevereiro", true);
+            case 3 -> Prompt.imprimir("Março", true);
+            case 4 -> Prompt.imprimir("Abril", true);
+            case 5 -> Prompt.imprimir("Maio", true);
+            case 6 -> Prompt.imprimir("Junho", true);
+            case 7 -> Prompt.imprimir("Julho", true);
+            case 8 -> Prompt.imprimir("Agosto", true);
+            case 9 -> Prompt.imprimir("Setembro", true);
+            case 10 -> Prompt.imprimir("Outubro", true);
+            case 11 -> Prompt.imprimir("Novembro", true);
+            case 12 -> Prompt.imprimir("Dezembro", true);
+            default -> Prompt.imprimirErro("Valor inválido!", true);
         }
     }
 }

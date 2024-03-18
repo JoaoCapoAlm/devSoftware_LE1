@@ -22,6 +22,6 @@ public class Exercicio17 {
         var peso3 = Prompt.lerDecimal("Peso da nota 3: ", false);
 
         var media = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3);
-        Prompt.imprimir("Média ponderada: " + String.format("%.2f", media));
+        Prompt.imprimir("Média ponderada: " + String.format("%.2f", media), true);
     }
 }

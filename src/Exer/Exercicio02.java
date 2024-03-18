@@ -9,11 +9,8 @@ public class Exercicio02 {
                 "resultado da sua soma. ");
         Prompt.linhaEmBranco();
 
-        System.out.print("Digite o primeiro valor: ");
-        var num1 = Prompt.lerDecimal();
-
-        System.out.print("Digite o segundo valor: ");
-        var num2 = Prompt.lerDecimal();
+        var num1 = Prompt.lerDecimal("Digite o primeiro valor: ", false);
+        var num2 = Prompt.lerDecimal("Digite o segundo valor: ", false);
 
         Prompt.imprimir("Soma: " + (num1 + num2));
     }

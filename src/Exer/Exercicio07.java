@@ -10,13 +10,11 @@ public class Exercicio07 {
         Prompt.imprimir("Caso o número esteja fora do intervalo o usuário também deverá ser informado.", true);
         Prompt.linhaEmBranco();
 
-        Prompt.imprimir("Digite um número: ", false);
-        var num = Prompt.lerDecimal();
+        var num = Prompt.lerDecimal("Digite um número: ", false);
 
-        if(num >= 100 && num <= 200){
+        if(num >= 100 && num <= 200)
             Prompt.imprimir("O número " + num + " está no intervalo de 100 à 200.", true);
-        } else {
+        else
             Prompt.imprimir("O número " + num + " não está no intervalo de 100 à 200.", true);
-        }
     }
 }

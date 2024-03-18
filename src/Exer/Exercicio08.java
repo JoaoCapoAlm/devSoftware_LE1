@@ -9,8 +9,7 @@ public class Exercicio08 {
                 "número seja maior ou igual a 50, outra se ele for menor que 50.", true);
         Prompt.linhaEmBranco();
 
-        Prompt.imprimir("Escreva um número: ", false);
-        var num = Prompt.lerDecimal();
+        var num = Prompt.lerDecimal("Escreva um número: ", false);
 
         Prompt.imprimir("O número " + num + " é " + (num >= 50 ? "maior" : "menor"  ) + " que 50.", true);
     }
