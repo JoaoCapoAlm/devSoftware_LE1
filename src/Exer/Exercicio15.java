@@ -23,7 +23,7 @@ public class Exercicio15 {
         var y2 = Prompt.lerInteiro();
 
         var distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-        var f = new DecimalFormat("0.##");
-        Prompt.imprimir("d = " + f.format(distancia), true);
+        var formater = new DecimalFormat("0.##");
+        Prompt.imprimir("d = " + formater.format(distancia), true);
     }
 }
