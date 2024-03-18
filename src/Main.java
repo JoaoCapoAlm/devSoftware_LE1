@@ -68,6 +68,9 @@ public class Main {
                 case 19:
                     Exercicio19.Executar();
                     break;
+                case 20:
+                    Exercicio20.Executar();
+                    break;
                 default:
                     Prompt.imprimirErro("Opção inválida!", true);
                     break;
@@ -116,6 +119,7 @@ public class Main {
         Prompt.imprimir("17 - Exercício 17 - Média ponderada", true);
         Prompt.imprimir("18 - Exercício 18 - Média harmônica", true);
         Prompt.imprimir("19 - Exercício 19 - Volume do cilindro", true);
+        Prompt.imprimir("20 - Exercício 20 - Gasolina gasta", true);
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
